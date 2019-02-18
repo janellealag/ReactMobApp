@@ -1,22 +1,14 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Inputs from "./components/Inputs";
+import React, { Component } from 'react'
+import { Button } from 'react-native'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View>
-        <Inputs />
-      </View>
-    );
-  }
+const App = () => {
+   const handlePress = () => false
+   return (
+      <Button
+         onPress = {handlePress}
+         title = "Red button!"
+         color = "red"
+      />
+   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
+export default App
