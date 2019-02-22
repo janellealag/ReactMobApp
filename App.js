@@ -1,14 +1,11 @@
-import React, { Component } from 'react'
-import { Button } from 'react-native'
+import React, { Component } from "react";
+import { AppRegistry, View } from "react-native";
+import Routes from "./components/Routes.js";
 
-const App = () => {
-   const handlePress = () => false
-   return (
-      <Button
-         onPress = {handlePress}
-         title = "Red button!"
-         color = "red"
-      />
-   )
+class reactTutorialApp extends Component {
+  render() {
+    return <Routes />;
+  }
 }
-export default App
+export default reactTutorialApp;
+AppRegistry.registerComponent("reactTutorialApp", () => reactTutorialApp);
