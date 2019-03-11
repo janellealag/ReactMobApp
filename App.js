@@ -1,11 +1,7 @@
-import React, { Component } from "react";
-import { AppRegistry, View } from "react-native";
-import Routes from "./components/Routes.js";
+import React from "react";
+import ActivityIndicatorExample from "./components/activityIndicator.js";
 
-class reactTutorialApp extends Component {
-  render() {
-    return <Routes />;
-  }
-}
-export default reactTutorialApp;
-AppRegistry.registerComponent("reactTutorialApp", () => reactTutorialApp);
+const Home = () => {
+  return <ActivityIndicatorExample />;
+};
+export default Home;
