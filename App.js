@@ -1,7 +1,7 @@
 import React from "react";
-import ActivityIndicatorExample from "./components/activityIndicator.js";
+import AlertExample from "./components/alert.js";
 
-const Home = () => {
-  return <ActivityIndicatorExample />;
+const App = () => {
+  return <AlertExample />;
 };
-export default Home;
+export default App;
